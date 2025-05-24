@@ -145,27 +145,27 @@ func (x *HelloResponse) GetMessage() string {
 	return ""
 }
 
-type NameList struct {
+type NamesList struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Names         []string               `protobuf:"bytes,1,rep,name=names,proto3" json:"names,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *NameList) Reset() {
-	*x = NameList{}
+func (x *NamesList) Reset() {
+	*x = NamesList{}
 	mi := &file_proto_greet_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *NameList) String() string {
+func (x *NamesList) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*NameList) ProtoMessage() {}
+func (*NamesList) ProtoMessage() {}
 
-func (x *NameList) ProtoReflect() protoreflect.Message {
+func (x *NamesList) ProtoReflect() protoreflect.Message {
 	mi := &file_proto_greet_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -177,12 +177,12 @@ func (x *NameList) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use NameList.ProtoReflect.Descriptor instead.
-func (*NameList) Descriptor() ([]byte, []int) {
+// Deprecated: Use NamesList.ProtoReflect.Descriptor instead.
+func (*NamesList) Descriptor() ([]byte, []int) {
 	return file_proto_greet_proto_rawDescGZIP(), []int{3}
 }
 
-func (x *NameList) GetNames() []string {
+func (x *NamesList) GetNames() []string {
 	if x != nil {
 		return x.Names
 	}
@@ -243,14 +243,14 @@ const file_proto_greet_proto_rawDesc = "" +
 	"\fHelloRequest\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\")\n" +
 	"\rHelloResponse\x12\x18\n" +
-	"\amessage\x18\x01 \x01(\tR\amessage\" \n" +
-	"\bNameList\x12\x14\n" +
+	"\amessage\x18\x01 \x01(\tR\amessage\"!\n" +
+	"\tNamesList\x12\x14\n" +
 	"\x05names\x18\x01 \x03(\tR\x05names\")\n" +
 	"\vMessageList\x12\x1a\n" +
-	"\bmessages\x18\x01 \x03(\tR\bmessages2\xdc\x02\n" +
+	"\bmessages\x18\x01 \x03(\tR\bmessages2\xdd\x02\n" +
 	"\fGreetService\x12A\n" +
-	"\bSayHello\x12\x17.greet_service.NoParams\x1a\x1c.greet_service.HelloResponse\x12R\n" +
-	"\x17SayHelloServerStreaming\x12\x17.greet_service.NameList\x1a\x1c.greet_service.HelloResponse0\x01\x12T\n" +
+	"\bSayHello\x12\x17.greet_service.NoParams\x1a\x1c.greet_service.HelloResponse\x12S\n" +
+	"\x17SayHelloServerStreaming\x12\x18.greet_service.NamesList\x1a\x1c.greet_service.HelloResponse0\x01\x12T\n" +
 	"\x17SayHelloClientStreaming\x12\x1b.greet_service.HelloRequest\x1a\x1a.greet_service.MessageList(\x01\x12_\n" +
 	"\x1eSayHelloBidirectionalStreaming\x12\x1b.greet_service.HelloRequest\x1a\x1c.greet_service.HelloResponse(\x010\x01B\tZ\a./protob\x06proto3"
 
@@ -271,12 +271,12 @@ var file_proto_greet_proto_goTypes = []any{
 	(*NoParams)(nil),      // 0: greet_service.NoParams
 	(*HelloRequest)(nil),  // 1: greet_service.HelloRequest
 	(*HelloResponse)(nil), // 2: greet_service.HelloResponse
-	(*NameList)(nil),      // 3: greet_service.NameList
+	(*NamesList)(nil),     // 3: greet_service.NamesList
 	(*MessageList)(nil),   // 4: greet_service.MessageList
 }
 var file_proto_greet_proto_depIdxs = []int32{
 	0, // 0: greet_service.GreetService.SayHello:input_type -> greet_service.NoParams
-	3, // 1: greet_service.GreetService.SayHelloServerStreaming:input_type -> greet_service.NameList
+	3, // 1: greet_service.GreetService.SayHelloServerStreaming:input_type -> greet_service.NamesList
 	1, // 2: greet_service.GreetService.SayHelloClientStreaming:input_type -> greet_service.HelloRequest
 	1, // 3: greet_service.GreetService.SayHelloBidirectionalStreaming:input_type -> greet_service.HelloRequest
 	2, // 4: greet_service.GreetService.SayHello:output_type -> greet_service.HelloResponse
