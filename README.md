@@ -24,6 +24,8 @@ Go_grpc/
 - **Server Streaming RPC:** Client sends a request and receives a stream of responses.
 - **Client Streaming RPC:** Client sends a stream of requests and receives a single response.
 - **Bidirectional Streaming RPC:** Both client and server send a stream of messages to each other.
+![go_grpc](https://github.com/user-attachments/assets/d32fe88c-0c05-4fc7-8ccc-afe5708e4fb8)
+
 
 ## How It Works
 
